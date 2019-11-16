@@ -124,29 +124,28 @@
       display: flex
       flex-direction: column
       justify-content: space-between
-    .benefit_block
-      .benefit_block_title>h2
-        width: 350px
-        text-align: center
-    .benefit_block:nth-child(2)
+    .row:nth-child(2)
       order: -1
-    .benefit_block:nth-child(4)
+      color: red
+    .row:nth-child(4)
       order: 8
       margin-top: 40px
-    &_icon
-      overflow-x: hidden
-
-
+      color: red
+      .benefit_block
+        display: flex
+        &_title>h2
+          width: 350px
+          text-align: center
+        &_img
+          overflow-x: hidden
 
   .feedback
     padding: 30px 0px 30px 0px
-
-    .social_networks_btn
+    &_social_btn
       display: flex
       flex-direction: column
       align-items: center
       margin-top: 56px
-
       .social_logo_text
         margin-top: 18px
         margin-bottom: 28px
@@ -154,34 +153,23 @@
   .about_fork
     min-height: 100%
     padding: 66px 70px 148px 70px
-
     .row
       max-width: 100%
-
-  .about_fork_title, .pricing_title
-    padding-top: 0px
-
-  .about_fork .about_fork_blocks
-    display: flex
-    flex-direction: column
-    flex-wrap: nowrap
-    margin-top: 32px
-
-    .about_fork_item
-      margin: 0
-      margin-top: 32px
-
-    .about_fork_item_indent
-      margin-top: 32px
-
-  .pricing
-    .row
+    &_title, .pricing_title
+      padding-top: 0px
+    &_blocks
       display: flex
       flex-direction: column
-      align-items: center
+      flex-wrap: nowrap
+      margin-top: 32px
+      .about_fork_item
+        margin: 0
+        margin-top: 32px
+        &_indent
+          margin-top: 32px
 
+  .pricing
     padding: 15px 28px 38px 28px
-
     h2.pricing_title:before
       content: ''
       width: 56.5%
@@ -195,17 +183,17 @@
     .row
       display: flex
       flex-direction: column
-
-    .pricing_cards
+      align-items: center
+      
+    &_cards
       display: block
       margin-top: 47px
 
-    .pricing_item
+    &_item
       display: block
       width: 257px
       margin: 6px auto
       margin-top: 20px
-
       &:hover
         transform: scale(1.07)
         transition: 1s
@@ -213,81 +201,81 @@
   h2.price
     padding: 20% 28% 0% 29%
 
-  .price_describe:before
-    top: 60%
-    left: 156%
-    z-index: 5
+//   .price_describe:before
+//     top: 60%
+//     left: 156%
+//     z-index: 5
 
-  .pricing
-    .pricing_item .pricing_description
-      .price_describe
-        display: block
-        width: 210px
-        height: 45px
-        color: rgba(255, 255, 255, 1)
-        font-family: Montserrat
-        font-size: 16px
-        font-weight: 400
-        margin: 0 auto
-        margin-top: 74px
+//   .pricing
+//     .pricing_item .pricing_description
+//       .price_describe
+//         display: block
+//         width: 210px
+//         height: 45px
+//         color: rgba(255, 255, 255, 1)
+//         font-family: Montserrat
+//         font-size: 16px
+//         font-weight: 400
+//         margin: 0 auto
+//         margin-top: 74px
 
-      .price_btn
-        margin: 0
-        padding: 0
-        margin-left: 19%
-        margin-right: 19%
-        margin-top: 36px
-        margin-bottom: 40px
+//       .price_btn
+//         margin: 0
+//         padding: 0
+//         margin-left: 19%
+//         margin-right: 19%
+//         margin-top: 36px
+//         margin-bottom: 40px
 
-    .pricing_info
-      margin-top: 100px
+//     .pricing_info
+//       margin-top: 100px
 
-  .subscribe
-    height: 150px
+//   .subscribe
+//     height: 150px
 
-    .subscribe_input
-      max-width: 230px
+//     .subscribe_input
+//       max-width: 230px
 
-  .news
-    height: 100%
-    padding: 0px 40px 0px 35px
-    background-color: rgba(255, 255, 255, 1)
-    margin: 0
+//   .news
+//     height: 100%
+//     padding: 0px 40px 0px 35px
+//     background-color: rgba(255, 255, 255, 1)
+//     margin: 0
 
-    .news_title
-      color: rgba(211, 209, 218, 1)
-      font-family: Montserrat
-      font-size: 28px
-      font-weight: 700
-      margin: 0
-      margin-top: 58px
+//     .news_title
+//       color: rgba(211, 209, 218, 1)
+//       font-family: Montserrat
+//       font-size: 28px
+//       font-weight: 700
+//       margin: 0
+//       margin-top: 58px
 
-  footer
-    height: 100%
-    padding: 64px 34px 87px 34px
-    background-color: rgba(255, 255, 255, 1)
-    margin: 0
+//   footer
+//     height: 100%
+//     padding: 64px 34px 87px 34px
+//     background-color: rgba(255, 255, 255, 1)
+//     margin: 0
 
-  ul.footer_navigation
-    margin: 0
-    margin-top: 36px
-    margin-bottom: 36px
+//   ul.footer_navigation
+//     margin: 0
+//     margin-top: 36px
+//     margin-bottom: 36px
 
-  footer
-    .footer_title_indent
-      margin-top: 18px
+//   footer
+//     .footer_title_indent
+//       margin-top: 18px
 
-    .footer_call
-      color: rgba(132, 142, 151, 1)
-      font-family: Montserrat
-      font-size: 12px
-      font-weight: 400
-      text-transform: uppercase
-      letter-spacing: 0.24px
+//     .footer_call
+//       color: rgba(132, 142, 151, 1)
+//       font-family: Montserrat
+//       font-size: 12px
+//       font-weight: 400
+//       text-transform: uppercase
+//       letter-spacing: 0.24px
 
-    .footer_text
-      color: rgba(132, 142, 151, 1)
-      font-family: Montserrat
-      font-size: 14px
-      font-weight: 400
-      letter-spacing: 0.28px
+//     .footer_text
+//       color: rgba(132, 142, 151, 1)
+//       font-family: Montserrat
+//       font-size: 14px
+//       font-weight: 400
+//       letter-spacing: 0.28px
