@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/css/style.min.css">
 </head>
 <body>
-    <header>
+    <header class="nav_menu">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-md-2">
@@ -20,11 +20,11 @@
                     </a>
                 </div>
                     <div class="col-2 col-md-6 offset-md-2">
-                        <ul class="nav_menu">
-                            <li class="nav_menu_item"><a href="#" class="nav_menu_link">Overview</a></li>
-                            <li class="nav_menu_item"><a href="#" class="nav_menu_link">About Fork</a></li>
-                            <li class="nav_menu_item"><a href="#" class="nav_menu_link">Buying options</a></li>
-                            <li class="nav_menu_item"><a href="#" class="nav_menu_link">Support</a></li>
+                        <ul class="nav_menu_items">
+                            <li><a href="#" class="nav_menu_link">Overview</a></li>
+                            <li><a href="#" class="nav_menu_link">About Fork</a></li>
+                            <li><a href="#" class="nav_menu_link">Buying options</a></li>
+                            <li><a href="#" class="nav_menu_link">Support</a></li>
                         </ul>
                     </div>
                 <div class="col-4 col-md-2">
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section class="hero_screen">
+    <section class="hero">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
@@ -57,7 +57,7 @@
                         Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. 
                     </p>
                 </div>
-                <div class="col-md-4 offset-md-4">
+                <div class="col-12 col-md-4 offset-md-4">
                     <div class="revolution_git">
                         <img src="src/img/github_buttons.png" alt="github_buttons" class="git_img">
                     </div>
@@ -66,15 +66,15 @@
         </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefit">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="benefit_block">
-                        <div class="benefit_icon">
+                        <div class="benefit_block_icon">
                             <img src="src/img/icons/benefits/icon_1.png" alt="benefit_icon_1">
                         </div>
-                        <div class="benefit_descr">
+                        <div class="benefit_block_descr">
                             <div class="benefit_subtitle">
                                 Creatred to Make The Web Better
                             </div>
@@ -85,18 +85,18 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="benefit_block benefit_block_title">
-                        <div class="benefit_title">
+                    <div class="benefit_block">
+                        <div class="benefit_block_title">
                             <h2>&lt;Here is what you get&gt;</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="benefit_block">
-                        <div class="benefit_icon">
+                        <div class="benefit_block_icon">
                             <img src="src/img/icons/benefits/icon_2.png" alt="benefit_icon_2">
                         </div>
-                        <div class="benefit_descr">
+                        <div class="benefit_block_descr">
                             <div class="benefit_subtitle">
                                 Incredibly Powerful Tool
                             </div>
@@ -107,18 +107,18 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="benefit_block benefit_block_img">
-                        <div class="benefit_img">
+                    <div class="benefit_block">
+                        <div class="benefit_block_img">
                             <img src="src/img/bg/second_bg.png" alt="benefit_image">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="benefit_block">
-                        <div class="benefit_icon">
+                        <div class="benefit_block_icon">
                             <img src="src/img/icons/benefits/icon_3.png" alt="benefit_icon_3">
                         </div>
-                        <div class="benefit_descr">
+                        <div class="benefit_block_descr">
                             <div class="benefit_subtitle">
                                 Experimental Stuff
                             </div>
@@ -131,10 +131,10 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="benefit_block">
-                        <div class="benefit_icon">
+                        <div class="benefit_block_icon">
                             <img src="src/img/icons/benefits/icon_4.png" alt="benefit_icon_4">
                         </div>
-                        <div class="benefit_descr">
+                        <div class="benefit_block_descr">
                             <div class="benefit_subtitle">
                                 Creatred to Make The Web Better
                             </div>
@@ -148,7 +148,8 @@
             </div>
         </div>
     </section>
-    <section class="feedbacks">
+
+    <section class="feedback">
         <div class="contatiner">
             <div class="row">
                 <div class="col-12 col-sm-8 col-md-4 offset-md-4">
@@ -164,13 +165,13 @@
                 </div>
                 <div class="col-12 col-sm-10 col-md-8 offset-md-2">
                     <div class="feedback_block">
-                        <p class="feedback_text"><span>@Pixelbuddha </span>Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
-                        <p class="feedback_subtext">2 hours ago</p>
+                        <p class="feedback_block_text"><span>@Pixelbuddha </span>Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
+                        <p class="feedback_block_subtext">2 hours ago</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-10 offset-md-1">
                     <div class="feedback_social">
-                        <ul class="social_networks_btn">
+                        <ul class="feedback_social_btn">
                             <li>
                                 <a href="#" class="social_logo">
                                     <img src="src/img/icons/feedback/button_1.png" alt="soc_btn_1">
@@ -206,7 +207,7 @@
                             <div class="about_fork_logo">    
                                 <img src="src/img/icons/about_fork/about_1.png" alt="about_logo_1">
                             </div>
-                            <p class="about_fork_text about_text_1">
+                            <p class="about_fork_text about_fork_text_1">
                                 Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. 
                             </p>
                         </div>
@@ -216,7 +217,7 @@
                             <div class="about_fork_logo">    
                                 <img src="src/img/icons/about_fork/about_2.png" alt="about_logo_2">
                             </div>
-                            <p class="about_fork_text about_text_2">
+                            <p class="about_fork_text about_fork_text_2">
                                 Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.
                             </p>
                         </div>
@@ -226,7 +227,7 @@
                             <div class="about_fork_logo">    
                                 <img src="src/img/icons/about_fork/about_3.png" alt="about_logo_3">
                             </div>
-                            <p class="about_fork_text about_text_3">
+                            <p class="about_fork_text about_fork_text_3">
                                 In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. 
                             </p> 
                         </div>
@@ -236,7 +237,7 @@
                             <div class="about_fork_logo">    
                                 <img src="src/img/icons/about_fork/about_4.png" alt="about_logo_4">
                             </div>
-                            <p class="about_fork_text about_text_4">
+                            <p class="about_fork_text about_fork_text_4">
                                 Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. 
                             </p>
                         </div>
@@ -246,7 +247,7 @@
                             <div class="about_fork_logo ">    
                                 <img src="src/img/icons/about_fork/about_5.png" alt="about_logo_5">
                             </div>
-                            <p class="about_fork_text about_text_5">
+                            <p class="about_fork_text about_fork_text_5">
                                 Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. 
                             </p>
                         </div>
@@ -256,7 +257,7 @@
                             <div class="about_fork_logo">    
                                 <img src="src/img/icons/about_fork/about_6.png" alt="about_logo_6">
                             </div>
-                            <p class="about_fork_text about_text_6">
+                            <p class="about_fork_text about_fork_text_6">
                                 Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.
                             </p> 
                         </div>
@@ -265,6 +266,7 @@
             </div> 
         </div> 
     </section> 
+
     <section class="pricing">
         <div class="contatiner">
             <h2 class="pricing_title">Fork Subscription Pricing</h2>
@@ -326,6 +328,7 @@
             </div>
         </div>
     </section>
+
     <section class="subscribe">
         <div class="container">
             <div class="row">
@@ -345,6 +348,7 @@
             </div>
         </div>
     </section>
+
     <section class="news">
         <div class="container">
             <div class="row">
@@ -449,12 +453,13 @@
             </div>
         </div>
     </section>
-    <footer>
+
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-10 col-sm-8 col-md-3 col-lg-3 col-xl-3">
                     <a href="#" class="footer_logo"><img src="src/img/nav_logo.png" alt="logo"></a>
-                    <div class="foter_sublogo">Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</div>
+                    <div class="footer_sublogo">Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</div>
                 </div>
                 <div class="col-10 col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-xl-2 offset-xl-1">
                     <ul class="footer_navigation">
