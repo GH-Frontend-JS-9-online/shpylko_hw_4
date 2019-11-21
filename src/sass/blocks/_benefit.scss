@@ -1,0 +1,13 @@
+.benefit {
+    min-height: 711px;
+    padding: 84px 0px 69px 0px;
+    background-color: rgba(244, 244, 244, 1);
+    &__items {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       list-style-type: none; 
+    }
+}

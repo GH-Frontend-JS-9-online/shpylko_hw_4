@@ -1,0 +1,30 @@
+.about-fork {
+    min-height: 764px;
+    padding: 98px 0 148px 0;
+    background: url("../img/bg/about_bg.jpg") center center/cover no-repeat;
+    &__title {
+        color:rgba(255, 255, 255, 1);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 83px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        .about-fork__logo {
+            display: block;
+        }
+        .about-fork__text {
+            display: block;
+        }
+
+    }
+}
