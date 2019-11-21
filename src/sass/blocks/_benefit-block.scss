@@ -1,0 +1,16 @@
+.benefit-block {
+    display: flex;
+    width: 45%;
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 111px;
+        height: 84px;
+        margin-right: 24px;
+    }
+    &__descr {
+        width: 366px;
+    }
+    
+}
